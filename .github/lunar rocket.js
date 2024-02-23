@@ -36,6 +36,8 @@ function youWon() {
 }
 
 function drawMoon(x, y) {
+
+  // this gradient color was taken from chatgpt. starts here and 
   let color1 = color(148, 87, 235); // Purple color
   let color2 = color(155, 100, 20); // M color
 
@@ -45,7 +47,7 @@ function drawMoon(x, y) {
     let c = lerpColor(color1, color2, inter);
 
     stroke(c);
-    line(0, i, width, i);
+    line(0, i, width, i); // ends here.
   }
   //moon
   fill(128);
