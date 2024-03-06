@@ -1,13 +1,13 @@
 function setup() {
   createCanvas(700, 700);
-  frameRate(10);
+  frameRate(30);
 }
 let rocketX = 300;
 let rocketY = -30;
 let speed = 0;
 
 let gravity = 5;
-let velocity = 0.5;
+let velocity = 0.1;
 
 let gameStatus = "start";
 
@@ -81,13 +81,13 @@ function draw() {
     //rocketY = rocketY + speed;
     if (keyIsDown(38)) {
       acceleration = 7;
-      velocity = 1;
+      velocity = 0.1;
     } else {
     }
 
     speed = gravity + velocity;
     rocketY = rocketY + speed - acceleration;
-    velocity += 2;
+    velocity += 0.5;
 
     //moon
     drawMoon(150, 400);
