@@ -1,6 +1,5 @@
-function setup(){
-createCanvas(700,700);
-
+function setup() {
+  createCanvas(700, 700);
 }
 let rocketX = 300;
 let rocketY = -30;
@@ -19,7 +18,7 @@ function mainScreen() {
   textSize(20);
   text("Click to start", 290, 265);
   text("Use upKeyArrow to controll the speed of the spaceship", 90, 360);
-} 
+}
 
 function resultScreen() {
   background(0);
@@ -40,8 +39,7 @@ function youWon() {
 }
 
 function drawMoon(x, y) {
-
-  // this gradient color was taken from chatgpt. starts here and 
+  // this gradient color was taken from chatgpt. starts here and
   let color1 = color(148, 87, 235); // Purple color
   let color2 = color(155, 100, 20); // M color
 
