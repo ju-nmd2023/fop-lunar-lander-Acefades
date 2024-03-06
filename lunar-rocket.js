@@ -1,6 +1,6 @@
 function setup() {
   createCanvas(700, 700);
-  framteRate(30);
+  frameRate(30);
 }
 let rocketX = 300;
 let rocketY = -30;
