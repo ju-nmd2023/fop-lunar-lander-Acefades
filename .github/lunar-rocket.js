@@ -1,12 +1,12 @@
 function setup() {
   createCanvas(700, 700);
-  frameRate(30);
+  frameRate(20);
 }
 let rocketX = 300;
 let rocketY = -30;
 let speed = 0;
 
-let gravity = 5;
+let gravity = 2;
 let velocity = 0.05;
 
 let gameStatus = "start";
