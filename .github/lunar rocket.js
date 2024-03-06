@@ -1,5 +1,5 @@
 function setup(){
-  window.createCanvas(700,700);
+createCanvas(700,700);
 
 }
 let rocketX = 300;
