@@ -1,3 +1,7 @@
+function setup(){
+  window.createCanvas(700,700);
+
+}
 let rocketX = 300;
 let rocketY = -30;
 let speed = 0;
@@ -78,7 +82,7 @@ function draw() {
     //rocketY = rocketY + speed;
     if (keyIsDown(38)) {
       acceleration = 7;
-      velocity = 0;
+      velocity = 1;
     } else {
     }
 
