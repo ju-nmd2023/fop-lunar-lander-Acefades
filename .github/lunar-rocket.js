@@ -7,7 +7,7 @@ let rocketY = -30;
 let speed = 0;
 
 let gravity = 5;
-let velocity = 0.1;
+let velocity = 0.05;
 
 let gameStatus = "start";
 
@@ -81,13 +81,13 @@ function draw() {
     //rocketY = rocketY + speed;
     if (keyIsDown(38)) {
       acceleration = 7;
-      velocity = 0.1;
+      velocity = 0.05;
     } else {
     }
 
     speed = gravity + velocity;
     rocketY = rocketY + speed - acceleration;
-    velocity += 0.5;
+    velocity += 0.3;
 
     //moon
     drawMoon(150, 400);
